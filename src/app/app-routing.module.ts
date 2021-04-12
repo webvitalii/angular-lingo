@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { StyleGuideModule } from '@app/style-guide/style-guide.module';
+
+
+
 const routes: Routes = [
   {
     path: 'style-guide',
-    // lazy loading of the module
-    loadChildren: () => import('./style-guide/style-guide.module').then(m => m.StyleGuideModule)
+    loadChildren: () => StyleGuideModule
   },
 ];
 
