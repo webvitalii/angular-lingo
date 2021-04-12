@@ -1,4 +1,4 @@
-# AngularLingo
+# Angular Lingo
 
 https://angular-lingo.web.app/
 
