@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { StyleGuideModule } from '@app/style-guide/style-guide.module';
-
+import { PageModule } from '@app/page/page.module';
 
 
 const routes: Routes = [
   {
-    path: 'style-guide',
-    loadChildren: () => StyleGuideModule
-  },
+    path: '',
+    loadChildren: () => PageModule
+  }
 ];
 
 @NgModule({
