@@ -1,1 +1,9 @@
-{}
+{
+  "nav": {
+    "aboutUs": "About us"
+  },
+  "footer": {
+    "github": "Angular Lingo on GitHub",
+    "codeSamples": "Angular code samples"
+  }
+}

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
+
+import { DataService } from '@core/services/data.service';
+
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translocoService: TranslocoService,
+              public dataService: DataService) { }
 
   ngOnInit(): void {
+  }
+
+  setActiveLang(langKey: string): void {
+    this.translocoService.setActiveLang(langKey);
   }
 
 }

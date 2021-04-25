@@ -1,4 +1,13 @@
 <mat-toolbar color="primary">
   <button mat-button routerLink="/">Angular Lingo</button>
-  <button mat-button routerLink="/about-us">About Us</button>
+  <button mat-button routerLink="/about-us">{{ 'nav.aboutUs' | transloco }}</button>
+
+  <ng-container *ngFor="let languageItem of dataService.availableLangs">
+    <button mat-button
+       *ngIf="dataService.activeLang !== languageItem"
+       (click)="setActiveLang(languageItem)">
+      <ng-container *ngIf="dataService.activeLang === 'en'; else englishBlock">Français</ng-container>
+      <ng-template #englishBlock>English</ng-template>
+    </button>
+  </ng-container>
 </mat-toolbar>
