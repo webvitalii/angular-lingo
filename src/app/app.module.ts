@@ -9,7 +9,7 @@ import { MainComponent } from './layout/main/main.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
-
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [MainComponent]
