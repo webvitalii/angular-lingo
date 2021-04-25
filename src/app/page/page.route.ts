@@ -4,7 +4,7 @@ import { HOME_ROUTE } from './home/home.route';
 import { ABOUT_US_ROUTE } from './about-us/about-us.route';
 
 
-export const ACCOUNT_ROUTE: Routes = [
+export const PAGE_ROUTE: Routes = [
   /* {
     path: '',
     redirectTo: 'about-us',
